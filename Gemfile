@@ -11,7 +11,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'redcarpet'
 gem 'haml', '~> 4.0.7'
-gem 'simple_form', '~> 3.2.1'
 gem 'devise', '~> 4.1.1'
 
 group :development, :test do
