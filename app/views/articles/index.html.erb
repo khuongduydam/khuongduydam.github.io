@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1>Duy's Blog</h1>
+  <h3>My first Rails Application for CoderSchool!</h3>
+  <%= form_tag articles_path, method: :get do %>
+  	<p>
+  		<%= text_field_tag :search, params[:search] %>
+  		<%= submit_tag 'Search', name: :nil %>
+  	</p>
+  <% end %>
+    <%= render @articles %>
+    <% @articles.each do |article|%>
+	  <p>
+	    <%= article.title %>
+	  </p>
+	<% end %>
+  <%= link_to 'New Article', new_article_path %>
+</div>
